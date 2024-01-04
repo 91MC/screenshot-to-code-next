@@ -157,7 +157,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
-                  {t("OpenAI API Key")}
+                  {t("请输入卡密")}
                 </div>
                 <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
                   {t(
@@ -168,7 +168,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-api-key"
-                placeholder={t("OpenAI API Key")!}
+                placeholder={t("请输入卡密，购买地址https://91.mckkc.cn")!}
                 value={settings.openAiApiKey || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
@@ -184,7 +184,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
-                  {t("OpenAI Base URL")}
+                  {t("开放模型对接接口-不会别动")}
                 </div>
                 <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
                   {t(
@@ -196,7 +196,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-base-url"
-                placeholder={t("OpenAI Base URL")!}
+                placeholder={t("GPT开放模型对接平台")!}
                 value={settings.openAiBaseURL || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
