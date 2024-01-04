@@ -1,8 +1,8 @@
 const baseSiteConfig = {
   name: "Codify - 网页截图生成代码",
   description: "网页截图生成代码",
-  url: "https://codify.icu",
-  metadataBase: new URL("https://codify.icu"),
+  url: "http://web.mckkc.top",
+  metadataBase: new URL("http://web.mckkc.top"),
   keywords: ["Openai", "ChatGPT", "AI", "Next.js"],
   authors: [
     {
