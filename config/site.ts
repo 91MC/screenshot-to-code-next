@@ -1,5 +1,5 @@
 const baseSiteConfig = {
-  name: "Codify - 网页截图生成代码",
+  name: "MCKKC OpenAI - 网页截图生成代码",
   description: "网页截图生成代码",
   url: "http://web.mckkc.top",
   metadataBase: new URL("http://web.mckkc.top"),
