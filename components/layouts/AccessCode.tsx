@@ -6,7 +6,7 @@ export default function AccessCode() {
       <p>
         😀 WelCome 欢迎使用MCKKC GPT模型构建，使用时请在左上角设置APIkey，可在网页内购买。
       </p>
-      <p>🆒 已支持 Gemini 识图模型免费使用，在设置中切换为 Gemini 模式即可。</p>
+      <p>🆒 目前充值优惠，满100元立减20，满1000元立减200!</p>
       <p>
         🎉 目前购买特惠 <strong>10CNY</strong> 优惠特供
         免费使用，需要更多额度请前往{" "}
