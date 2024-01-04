@@ -86,7 +86,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               }
             />
             <div className="flex items-center justify-between">
-              <a href="https://shop.taoist.fun/buy/54" target="_blank">
+              <a href="https://91.mckkc.cn/" target="_blank">
                 <Button size="sm" variant="secondary">
                   {t("Buy credits")}
                 </Button>
