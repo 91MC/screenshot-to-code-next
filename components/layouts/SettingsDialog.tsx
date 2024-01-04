@@ -168,7 +168,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-api-key"
-                placeholder={t("请输入卡密，购买地址https://91.mckkc.cn")!}
+                placeholder={t("请输入卡密")!}
                 value={settings.openAiApiKey || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
