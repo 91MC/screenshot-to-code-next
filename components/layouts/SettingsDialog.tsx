@@ -26,7 +26,7 @@ interface Props {
 
 const llm = [
   {
-    title: "开放式接口#1",
+    title: "开放式接口#1 高速CN2",
     value: "OpenAi",
   },
 
