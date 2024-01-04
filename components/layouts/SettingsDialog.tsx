@@ -29,10 +29,7 @@ const llm = [
     title: "开放式接口#1",
     value: "OpenAi",
   },
-  {
-    title: "自构建接口#2（VIP）",
-    value: "Gemini",
-  },
+
 ];
 
 function SettingsDialog({ settings, setSettings, Config }: Props) {
