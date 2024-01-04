@@ -26,11 +26,11 @@ interface Props {
 
 const llm = [
   {
-    title: "OpenAI",
+    title: "开放式接口#1",
     value: "OpenAi",
   },
   {
-    title: "Gemini (free)",
+    title: "自构建接口#2（VIP）",
     value: "Gemini",
   },
 ];
@@ -70,7 +70,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
           <div className="space-y-4 bg-slate-200 p-4 mt-2 mb-3 rounded dark:text-white dark:bg-slate-800">
             <Label htmlFor="openai-api-key">
               <div className=" text-slate-600 font-bold">
-                {t("Access key")} ({t("Only OpenAI model")})
+                {t("请输入购买卡密")} ({t("https://91.mckkc.cn/")})
               </div>
             </Label>
             <Input
@@ -86,7 +86,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               }
             />
             <div className="flex items-center justify-between">
-              <a href="https://91.mckkc.cn/" target="_blank">
+              <a href="https://91.mckkc.cn" target="_blank">
                 <Button size="sm" variant="secondary">
                   {t("Buy credits")}
                 </Button>
