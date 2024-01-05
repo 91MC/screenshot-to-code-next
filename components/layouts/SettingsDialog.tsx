@@ -26,10 +26,13 @@ interface Props {
 
 const llm = [
   {
-    title: "开放式接口#1 高速CN2",
+    title: "开放式接口#1 高速CN2 GPT-4.0",
+    value: "OpenAi",
+  }
+  {
+    title: "VIP接口#2 高速CN2 GPT-4.0 32K",
     value: "OpenAi",
   },
-
 ];
 
 function SettingsDialog({ settings, setSettings, Config }: Props) {
@@ -194,7 +197,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-base-url"
                 placeholder={t("GPT开放模型对接平台")!}
-                value={settings.openAiBaseURL || ""}
+                value={settings.openAiBaseURL || "https://api.oihub.cc/v1"}
                 onChange={(e) =>
                   setSettings((s) => ({
                     ...s,
