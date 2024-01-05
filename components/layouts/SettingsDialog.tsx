@@ -197,7 +197,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-base-url"
                 placeholder={t("GPT开放模型对接平台")!}
-                value={settings.openAiBaseURL || "https://api.oihub.cc/v1"}
+                value={settings.openAiBaseURL || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
                     ...s,
