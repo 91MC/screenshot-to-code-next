@@ -26,16 +26,12 @@ interface Props {
 
 const llm = [
   {
-    title: "开放式接口#1 高速CN2 GPT-4.0",
+    title: "VIP接口#1 高速CN2 GPT-4.0 32K",
     value: "OpenAi",
   },
   {
-    title: "/nVIP接口#2 高速CN2 GPT-4.0 32K",
-    value: "OpenAi",
-  },
-  {
-    title: "试用接口,ChatGPT4.0",
-    value: "Try",
+    title: "试用接口-4.0",
+      value: "Try",
   },
 ];
 
@@ -184,7 +180,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
             </>
           )}
 
-          {settings.llm !== "Gemini" && "OpenAi" &&(
+          {settings.llm !== "Gemini" && "OpenAi" && (
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
@@ -200,7 +196,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-base-url"
-                placeholder={t("试用接口,此接口为试用接口默认ChatGPT4.0 ChATGPT4.0-32K请购买正版")!}
+                placeholder={t("试用接口,此接口为试用接口默认ChatGPT4.0")!}
                 value={settings.openAiBaseURL || "https://api.oihub.cc/v1"}
                 onChange={(e) =>
                   setSettings((s) => ({
@@ -213,7 +209,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
           )}
         </div>
         
-          {settings.llm !== "Gemini" && "Try" &&(
+          {settings.llm !== "Gemini" && "Try" && (
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
