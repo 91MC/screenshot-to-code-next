@@ -28,7 +28,7 @@ const llm = [
   {
     title: "开放式接口#1 高速CN2 GPT-4.0",
     value: "OpenAi",
-  }
+  },
   {
     title: "VIP接口#2 高速CN2 GPT-4.0 32K",
     value: "OpenAi",
