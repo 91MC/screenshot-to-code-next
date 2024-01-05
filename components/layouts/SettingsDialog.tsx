@@ -26,12 +26,8 @@ interface Props {
 
 const llm = [
   {
-    title: "VIP接口#1 高速CN2 GPT-4.0 32K",
+    title: "VIP",
     value: "OpenAi",
-  },
-  {
-    title: "试用接口-4.0",
-      value: "OpenAi",
   },
 ];
 
