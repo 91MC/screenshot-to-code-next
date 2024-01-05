@@ -33,6 +33,11 @@ const llm = [
     title: "/nVIP接口#2 高速CN2 GPT-4.0 32K",
     value: "OpenAi",
   },
+  {
+    title: "试用接口,ChatGPT4.0",
+    value: "OpenAi",
+    openai-base-url.
+  },
 ];
 
 function SettingsDialog({ settings, setSettings, Config }: Props) {
@@ -180,7 +185,36 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
             </>
           )}
 
-          {settings.llm !== "Gemini" && (
+          {settings.llm !== "Gemini" && "OpenAi" &&(
+            <>
+              <Label htmlFor="openai-api-key">
+                <div className=" text-slate-600 font-bold">
+                  {t("开放模型对接接口-不会别动")}
+                </div>
+                <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
+                  {t(
+                    "If you dont want to use the default URL, replace it with the proxy URL."
+                  )}
+                </div>
+              </Label>
+
+              <Input
+                className=" text-slate-400 placeholder:text-slate-400"
+                id="openai-base-url"
+                placeholder={t("试用接口,此接口为试用接口默认ChatGPT4.0 ChATGPT4.0-32K请购买正版")!}
+                value={settings.openAiBaseURL || "https://api.oihub.cc/v1"}
+                onChange={(e) =>
+                  setSettings((s) => ({
+                    ...s,
+                    openAiBaseURL: e.target.value,
+                  }))
+                }
+              />
+            </>
+          )}
+        </div>
+        
+          {settings.llm !== "Gemini" && "OpenAi" &&(
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
