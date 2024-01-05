@@ -31,7 +31,7 @@ const llm = [
   },
   {
     title: "试用接口-4.0",
-      value: "Try",
+      value: "OpenAi",
   },
 ];
 
