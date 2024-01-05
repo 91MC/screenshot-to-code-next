@@ -31,7 +31,7 @@ const llm = [
   },
   {
     title: "试用接口-4.0",
-      value: "Try",
+      value: "OpenAc",
   },
 ];
 
@@ -179,9 +179,40 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               />
             </>
           )}
+
           
+        {settings.llm !== "Gemini" && "OpenAi" && (
+            <>
+              <Label htmlFor="openai-api-key">
+                <div className=" text-slate-600 font-bold">
+                  {t("开放模型对接接口-不会别动")}
+                </div>
+                <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
+                  {t(
+                    "If you dont want to use the default URL, replace it with the proxy URL."
+                  )}
+                </div>
+              </Label>
+
+              <Input
+                className=" text-slate-400 placeholder:text-slate-400"
+                id="openai-base-url"
+                placeholder={t("试用接口,此接口为试用接口默认ChatGPT4.0")!}
+                value={settings.openAiBaseURL || "https://api.oihub.cc/v1"}
+                onChange={(e) =>
+                  setSettings((s) => ({
+                    ...s,
+                    openAiBaseURL: e.target.value,
+                  }))
+                }
+              />
+            </>
+          )}
+        </div>
+
+
         
-          {settings.llm !== "Gemini" && (
+          {settings.llm !== "Gemini" && settings.llm !== "OpenAc" &&(
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
