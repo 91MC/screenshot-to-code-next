@@ -181,7 +181,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
           )}
           
         
-          {settings.llm !== "Gemini" && "Try" && (
+          {settings.llm !== "Gemini" && (
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
