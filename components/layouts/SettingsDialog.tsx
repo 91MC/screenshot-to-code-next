@@ -35,8 +35,7 @@ const llm = [
   },
   {
     title: "试用接口,ChatGPT4.0",
-    value: "OpenAi",
-    openai-base-url.
+    value: "Try",
   },
 ];
 
@@ -214,7 +213,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
           )}
         </div>
         
-          {settings.llm !== "Gemini" && "OpenAi" &&(
+          {settings.llm !== "Gemini" && "Try" &&(
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
