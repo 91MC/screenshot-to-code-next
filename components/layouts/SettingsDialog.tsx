@@ -66,7 +66,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
           <div className="space-y-4 bg-slate-200 p-4 mt-2 mb-3 rounded dark:text-white dark:bg-slate-800">
             <Label htmlFor="openai-api-key">
               <div className=" text-slate-600 font-bold">
-                {t("请输入购买卡密")} ({t("https://91.mckkc.cn/")})
+                {t("Access key")} ({t("SDK:")})
               </div>
             </Label>
             <Input
@@ -82,7 +82,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               }
             />
             <div className="flex items-center justify-between">
-              <a href="https://91.mckkc.cn" target="_blank">
+              <a href="https://91.mckkc.top" target="_blank">
                 <Button size="sm" variant="secondary">
                   {t("Buy credits")}
                 </Button>
@@ -153,7 +153,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
-                  {t("请输入卡密")}
+                  {t("OpenAI API Key")}
                 </div>
                 <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
                   {t(
@@ -164,7 +164,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-api-key"
-                placeholder={t("请输入卡密")!}
+                placeholder={t("OpenAI API Key")!}
                 value={settings.openAiApiKey || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
@@ -175,12 +175,12 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               />
             </>
           )}
- 
+
           {settings.llm !== "Gemini" && (
             <>
               <Label htmlFor="openai-api-key">
                 <div className=" text-slate-600 font-bold">
-                  {t("开放模型对接接口-不会别动")}
+                  {t("试用或调试接口")}
                 </div>
                 <div className="font-light mt-2 leading-relaxed text-slate-400 text-xs">
                   {t(
@@ -192,7 +192,7 @@ function SettingsDialog({ settings, setSettings, Config }: Props) {
               <Input
                 className=" text-slate-400 placeholder:text-slate-400"
                 id="openai-base-url"
-                placeholder={t("GPT开放模型对接平台")!}
+                placeholder={t("此处填写接口")!}
                 value={settings.openAiBaseURL || ""}
                 onChange={(e) =>
                   setSettings((s) => ({
